@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="みのポートフォリオサイト！">
     <meta name="keyword" content="ポートフォリオ, portfolio">
-    <title><%= title %></title>
+    <title><%= pageTitle %>&nbsp;|&nbsp;<%= title %></title>
     <!-- アイコン -->
     <!-- <link rel="icon" type="shortcut icon" href="サイトアイコン画像のパス指定"> -->
     <!-- レスポンシブ対応 -->
@@ -15,7 +15,13 @@
     <link rel="stylesheet" href="/stylesheets/main.css">
   </head>
   <body>
-    <!-- <% var par = ejsfile; %>
-    <%- include(par) %> -->
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <h1><%= pageTitle %></h1>
+      <% var par = ejsfile; %>
+      <%- include(par) %>
+    </main>
   </body>
 </html>

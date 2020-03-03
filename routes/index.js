@@ -1,20 +1,18 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
 
-/* INDEX page */
-router.get('/', function(req, res) {
-  const mainContents = [
+/* Index page */
+router.get('/', (req, res) => {
+  const menuContents = [
     ['WorkA', 'description'],
     ['WorkB', 'description'],
     ['WorkC', 'description'],
-    ['WorkD', 'description'],
-    ['WorkE', 'description'],
-    ['WorkF', 'description'],
+    ['WorkD', 'description']
   ]
   res.render('index', {
     title: 'Express',
-    mainContents: mainContents
-  });
-});
+    menuContents: menuContents
+  })
+})
 
-module.exports = router;
+module.exports = router

@@ -15,15 +15,21 @@
     <link rel="stylesheet" href="/stylesheets/main.css">
   </head>
   <body>
-    <mian>
-      <div class="index_nav-wrapper">
-        <% mainContents.forEach((content, index) => { %>
-          <% if (index == 3) { return } %>
+    <main>
+      <nav class="index_nav">
+        <div class="index_nav-bar">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="index_nav-wrapper">
+          <% menuContents.forEach((content) => { %>
           <div class="index_nav-content"><%= content[0] %></div>
-        <% })%>
-        <div class="index_nav-content">一覧</div>
-        <div class="index_nav-content">各種アカウント</div>
-      </div>
-    </mian>
+          <% })%>
+          <div class="index_nav-content">一覧</div>
+          <div class="index_nav-content">各種アカウント</div>
+        </div>
+      </nav>
+    </main>
   </body>
 </html>
